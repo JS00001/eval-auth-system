@@ -1,6 +1,6 @@
   // *************************************************
   // 
-  //           Basic Eval Auth Example
+  //        Basic Eval Licensing System
   //             Made By: Jack S
   //      Please do not remove credits. Thanks!
   //
