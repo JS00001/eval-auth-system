@@ -26,7 +26,7 @@ async function auth() {
     await si.uuid().then(id => hwid = id.os.toString())
     let str = generate()
     request(url + "/auth?token=" + config.token + "&hwid=" + hwid + "&file=" + fileName + "&key=" + str, function (err, res, body) {
-        console.log(body)
+        //console.log(body)
         if (JSON.parse(body.split(" ")[0]).success == true) {
             let newBod = body.split(" ")[1];
             let toDES = crypto.TripleDES.decrypt(newBod, str);
