@@ -186,8 +186,6 @@
   })
 
   app.listen(port, async () => {
-      if (config.cleanconsole) {
-          console.clear();
-      }
+      if (config.cleanconsole) console.clear();
       console.log(d + "Now listening on localhost:" + port);
   })
